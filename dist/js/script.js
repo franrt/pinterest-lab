@@ -20257,11 +20257,11 @@ var pinterest = [{ "id": 1, "title": "Fuke zisukje bu dibas sik.", "description"
 
 $(document).ready(function() {
     //utilizaré esta librería Masonry para que se acomoden las imágenes correctamente
-
-    /* $('.contenedor').masonry({
-         itemSelector: '.elemento',
-         horizontalOrder: true
-     });*/
+    /*
+        $('.contenedor').masonry({
+            itemSelector: '.elemento',
+        });
+        */
 
     //lugar donde se van a imprimir las imgs en el html
     var $pins = $('.contenedor');
@@ -20277,6 +20277,21 @@ $(document).ready(function() {
             '<img src="dist/img/' + photo + '" id="pin" alt="pin">' +
             '<h6>' + pin.title + '</h6>' + '</br>' + '<p>' + pin.description + '</br>' + pin.username + '</br> #' + pin.hashtag + '</p>' +
             '</div>')
+    });
+
+
+    //Para que detecte que bajó al final del contenedor y luego poder cargar las siguientes 20 imagenes:
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            $.each(setTwo, function(index, pin) {
+                var photo = pin.image_url;
+                $pins.append('<div class="elemento">' +
+                    '<img src="dist/img/' + photo + '" id="pin" alt="pin">' +
+                    '<h6>' + pin.title + '</h6>' + '</br>' + '<p>' + pin.description + '</br>' + pin.username + '</br> #' + pin.hashtag + '</p>' +
+                    '</div>')
+            });
+        }
     });
 
 });
