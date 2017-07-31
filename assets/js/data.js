@@ -32,11 +32,16 @@ $(document).ready(function() {
             $.each(setTwo, function(index, pin) {
                 var photo = pin.image_url;
                 $pins.append('<div class="elemento">' +
-                    '<img src="dist/img/' + photo + '" id="pin" alt="pin">' +
+                    '<img src="dist/img/' + photo + '" id="pin" class="pin" alt="pin">' +
                     '<h6>' + pin.title + '</h6>' + '</br>' + '<p>' + pin.description + '</br>' + pin.username + '</br> #' + pin.hashtag + '</p>' +
                     '</div>')
             });
         }
     });
+
+    //modal
+
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
 
 });

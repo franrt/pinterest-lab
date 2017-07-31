@@ -5,6 +5,7 @@
     <title>Pinterest-by-fran</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="dist/css/style.min.css" rel="stylesheet">
 </head>
@@ -20,43 +21,47 @@
         </ul>
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Inicio</a>
+                <a href="#!" class="brand"><i class="fa fa-pinterest" aria-hidden="true"></i>Inicio</a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <form>
-                            <div class="input-field">
-                                <input id="search" type="search" required>
-                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                                <i class="material-icons">close</i>
-                            </div>
-                        </form>
+                        <div class="input">
+                            <span><i class="fa fa-search"></i>
+                            <input id="busca" type="search" required>
+                            <i class="fa fa-close"></i></span>
+                        </div>
                     </li>
                     <!-- Dropdown Trigger -->
-                    <li><a class="dropdown-a" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="badges.html">Components</a></li>
+                    <li><a class="dropdown-a" href="#!" data-activates="dropdown1">Todos los pines<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li>
+                        <a href="#"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxjAAAAJGQwYzRmM2M1LWU4ODgtNDJlZS04MmEwLTVlNjczOWIyNzMyOQ.jpg" class="circle fran"></a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </section>
 
-    <section>
+    <section class="botones">
         <div class="btns">
-
-            <a class="btn btn-1">Dress</a>
-            <a class="btn btn-2">San Miguel De Allende</a>
-            <a class="btn btn-3">Friki</a>
-            <a class="btn btn-4">Invitaciones</a>
-            <a class="btn btn-5">Photography</a>
-            <a class="btn btn-6">Photocall</a>
-            <a class="btn btn-7">Damas</a>
-            <a class="btn btn-8">Illumination</a>
-            <a class="btn btn-9">Ramo</a>
-            <a class="btn btn-10">Souvenirs</a>
-            <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+            <a class="btn btn-1 valign-wrapper">Dress</a>
+            <a class="btn btn-2 valign-wrapper">San Miguel De Allende</a>
+            <a class="btn btn-3 valign-wrapper">Friki</a>
+            <a class="btn btn-4 valign-wrapper">Invitaciones</a>
+            <a class="btn btn-5 valign-wrapper">Photography</a>
+            <a class="btn btn-6 valign-wrapper">Photocall</a>
+            <a class="btn btn-7 valign-wrapper">Damas</a>
+            <a class="btn btn-8 valign-wrapper">Illumination</a>
+            <a class="btn btn-9 valign-wrapper">Ramo</a>
+            <a class="btn btn-10 valign-wrapper">Souvenirs</a>
+            <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>
         </div>
     </section>
 
     <section id="pines">
+
+        <!-- falta modal  -->
+
+
+
         <!-- acá van impresos todos los datos del json con el formato requerido-->
         <div class="contenedor">
 

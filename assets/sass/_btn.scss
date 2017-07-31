@@ -1,7 +1,6 @@
 .btns {
     display: inline-flex;
     padding: 5px;
-    font-size: 8px;
     .btn-1 {
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR839vQWnsA9wPLM07ax88yA-qVNHqGaJcxk8vpOjoNstagb4jVRw);
         @include button();
@@ -42,4 +41,8 @@
         background-image: url(https://s-media-cache-ak0.pinimg.com/236x/76/f8/50/76f850f32587f9f7c2f60cc86aa4aead.jpg);
         @include button();
     }
+}
+
+.fa-angle-right {
+    color: grey;
 }

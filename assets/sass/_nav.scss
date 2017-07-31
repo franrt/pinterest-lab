@@ -1,9 +1,50 @@
+nav {
+    height: 60px;
+}
+
 .nav-wrapper {
     background-color: $fondo;
+    width: 100%;
 }
 
 .nav-wrapper {
     a {
         color: $color-nav;
     }
+}
+
+.fran {
+    height: 40px;
+    margin-top: 12px;
+}
+
+#busca {
+    background-color: #efefef;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    height: 3rem;
+    width: 1000px;
+    font-size: 1rem;
+    margin: 0 0 20px;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.fa-search,
+.fa-close {
+    color: grey;
+}
+
+.dropdown-a {
+    background-color: #efefef;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 10px 0 20px 0;
+    padding: 0;
 }
