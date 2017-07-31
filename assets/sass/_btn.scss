@@ -1,0 +1,45 @@
+.btns {
+    display: inline-flex;
+    padding: 5px;
+    font-size: 8px;
+    .btn-1 {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR839vQWnsA9wPLM07ax88yA-qVNHqGaJcxk8vpOjoNstagb4jVRw);
+        @include button();
+    }
+    .btn-2 {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/San_Miguel_de_Allende_sky.jpg/275px-San_Miguel_de_Allende_sky.jpg);
+        @include button();
+    }
+    .btn-3 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/40/cf/93/40cf9315d2353374ea92390861d9d6c5.jpg);
+        @include button();
+    }
+    .btn-4 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/27/dc/ec/27dcecf0c286e9d6f831a3171fc231ba.jpg);
+        @include button();
+    }
+    .btn-5 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/e6/44/07/e64407849fa3581f2658b27aa8bb66ef.jpg);
+        @include button();
+    }
+    .btn-6 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/ef/5e/0f/ef5e0f702e488d7dc9f6a77b73396379.jpg);
+        @include button();
+    }
+    .btn-7 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/1b/0d/17/1b0d1734d728775cd365e92df4c52e4e.jpg);
+        @include button();
+    }
+    .btn-8 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/236x/58/5e/10/585e1032cfbe5b04316f996222df1207.jpg);
+        @include button();
+    }
+    .btn-9 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/8d/65/6a/8d656a0aa6b6c617685162010a8707eb.jpg);
+        @include button();
+    }
+    .btn-10 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/236x/76/f8/50/76f850f32587f9f7c2f60cc86aa4aead.jpg);
+        @include button();
+    }
+}

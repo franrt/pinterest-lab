@@ -1,0 +1,10 @@
+@mixin button() {
+    background-repeat: no-repeat;
+    height: 50px;
+    background-position: center;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 10px;
+}
