@@ -20271,10 +20271,11 @@ $(document).ready(function() {
     var setTwo = pinterest.slice(20, 40);
 
     //primero hay que imprimir las primeras 20 imgs en la pag
-    $.each(setOne, function(pin) {
+    $.each(setOne, function(index, pin) {
+        var photo = pin.image_url;
         $pins.append('<div class="elemento">' +
-            '<img src="dist/img/' + pin.image_url + '">' +
-            '<p>' + +pin.title + '</br> Description: ' + pin.description + '</br>' + pin.username + '</br> #' + pin.hashtag + '</p>' +
+            '<img src="dist/img/' + photo + '" id="pin" alt="pin">' +
+            '<h6>' + pin.title + '</h6>' + '</br>' + '<p>' + pin.description + '</br>' + pin.username + '</br> #' + pin.hashtag + '</p>' +
             '</div>')
     });
 
